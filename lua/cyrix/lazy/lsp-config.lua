@@ -121,14 +121,10 @@ return {
     --  See `:help lsp-config` for information about keys and how to configure
     ---@type table<string, vim.lsp.Config>
     local servers = {
-      angularls = {},
       clangd = {}, -- C
       gopls = {}, --GO
-      gowork = {},
-      gotmpl = {},
       pyrefly = {}, --python
       rust_analyzer = {}, --rust
-      ts_ls = {}, --type script
       stylua = {}, -- Used to format Lua code
 
       -- Special Lua Config, as recommended by neovim help docs
@@ -172,7 +168,6 @@ return {
     vim.list_extend(ensure_installed, {
       'pyrefly',
       'docker-language-server',
-      'angular-language-server',
     })
 
     require('mason-tool-installer').setup { ensure_installed = ensure_installed }
