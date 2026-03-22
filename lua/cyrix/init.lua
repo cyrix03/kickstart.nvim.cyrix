@@ -1,0 +1,5 @@
+require 'cyrix.set'
+require 'cyrix.remap'
+require 'cyrix.autocommand'
+require 'cyrix.health'
+require 'cyrix.init_lazy'
